@@ -35,7 +35,7 @@ namespace ECommerce.Api.Orders
                 options.UseInMemoryDatabase("Orders");
             });
             services.AddScoped<IOrdersProvider, OrdersProvider>();
-            services.AddAutoMapper(typeof(Startup));
+           services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
         }
 
